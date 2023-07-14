@@ -2,15 +2,52 @@ html,body{
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(162, 157, 157, 0.998);
 }
 
 #backgroundImg{
-  height: 100vh;
+  height: 50vh;
   width: auto;
   padding: 0;
   margin: 0;
 }
 
-.page{
+.modal{
   display: flex;
+  width: 1200px;
+  max-width: 100%;
+  background-color: white;
+}
+
+.infoSide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(238, 231, 226);
+}
+
+.forum{
+  flex: 1;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+#createBtn{
+  margin-top: 15px;
+  width: 200px;
+  height: 30px;
+  color: white;
+  background-color: rgb(105, 180, 105);
+  border-style: none;
+  border-radius: 6px;
+}
+
+a:link{
+  text-decoration: none;
 }
