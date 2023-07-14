@@ -7,11 +7,30 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="page">
-  <img src="imgs/background.jpg" id="backgroundImg" alt="A lamppost surrounded by bushes, trees, and flowers.">
-  <div class="infoSide">
-    <h1>Dummy text</h1>
-  </div>
+  <div class="modal">
+    <img src="imgs/background.jpg" id="backgroundImg" alt="A lamppost surrounded by bushes, trees, and flowers.">
+    <div class="infoSide">
+      <h1>Dummy text</h1>
+      <div class="forum">
+        <h3>Let's get started</h3>
+        <form>
+          <label for="first-name">First Name:</label>
+          <input type="text" name="first-name" id="first-name">
+          <label for="last-name">Last Name:</label>
+          <input type="text" name="last-name" id="last-name">
+          <label for="user-email">Email:</label>
+          <input type="email" name="email" id="user-email">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="user-phone" id="phone">
+          <label for="user-password">Password:</label>
+          <input type="password" name="password" id="user-password">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" name="confirm-password" id="confirm-password">
+        </form>
+      </div>
+      <button type="submit" id="createBtn">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
   </div>
 </body>
 </html>
