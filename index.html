@@ -8,28 +8,42 @@
 </head>
 <body>
   <div class="modal">
-    <img src="imgs/background.jpg" id="backgroundImg" alt="A lamppost surrounded by bushes, trees, and flowers.">
+    <div class="background">
+    <img src="imgs/background.jpg" id="backgroundImg" 
+      alt="A lamppost surrounded by bushes, trees, and flowers."/>
+      <img src="imgs/odin-lined.png" alt="The Odin Project logo" id="odinImg">
+    </div>
     <div class="infoSide">
-      <h1>Dummy text</h1>
+      <h1>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Officia similique deserunt sunt blanditiis fuga 
+        rem nisi maxime omnis vero modi?</h1>
       <div class="forum">
         <h3>Let's get started</h3>
         <form>
-          <label for="first-name">First Name:</label>
-          <input type="text" name="first-name" id="first-name">
-          <label for="last-name">Last Name:</label>
-          <input type="text" name="last-name" id="last-name">
-          <label for="user-email">Email:</label>
-          <input type="email" name="email" id="user-email">
-          <label for="phone">Phone Number</label>
-          <input type="tel" name="user-phone" id="phone">
-          <label for="user-password">Password:</label>
-          <input type="password" name="password" id="user-password">
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" name="confirm-password" id="confirm-password">
+          <div class="name">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+          <div class="info">
+            <label for="user-email">Email</label>
+            <input type="email" name="email" id="user-email">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="user-phone" id="phone">
+          </div>
+          <div class="passwords">
+            <label for="user-password">Password</label>
+            <input type="password" name="password" id="user-password">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+          </div>
         </form>
       </div>
-      <button type="submit" id="createBtn">Create Account</button>
-      <p>Already have an account? <a href="">Log in</a></p>
+      <div class="bottom">
+        <button type="submit" id="createBtn">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
     </div>
   </div>
 </body>
