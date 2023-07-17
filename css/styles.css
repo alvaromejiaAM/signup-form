@@ -1,4 +1,5 @@
-html,body{
+html,
+body{
   margin: 0;
   padding: 0;
   height: 100%;
@@ -8,6 +9,15 @@ html,body{
   justify-content: center;
   background-color: rgba(162, 157, 157, 0.998);
   position: relative;
+}
+
+.modal{
+  display: flex;
+  position: absolute;
+  flex-shrink: 1;
+  width: 1500px;
+  max-width: 100%;
+  background-color: white;
 }
 
 .background{
@@ -36,15 +46,6 @@ html,body{
   bottom: 300px;
 }
 
-.modal{
-  display: flex;
-  position: absolute;
-  flex-shrink: 1;
-  width: 1500px;
-  max-width: 100%;
-  background-color: white;
-}
-
 .infoSide{
   display: flex;
   flex-direction: column;
@@ -58,6 +59,45 @@ html,body{
   display: flex;
   flex-direction: column;
   background-color: white;
+
+}
+
+h3{
+  margin-left: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.firstName, 
+.lastName, 
+.email, 
+.phone,
+.password,
+.confirm{
+  display: flex;
+  flex-direction: column;
+}
+
+.name, 
+.info,
+.passwords{
+  display: flex;
+  justify-content:space-evenly;
+  gap: 104px;
+  margin-right: 200px;
+}
+
+.input{
+  display: flex;
+  max-width: 130px;
+  height: 90px;
 }
 
 .bottom{
