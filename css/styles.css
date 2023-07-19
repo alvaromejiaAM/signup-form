@@ -11,6 +11,11 @@ body{
   position: relative;
 }
 
+@font-face {
+  font-family: Wet;
+  src: url(../Calligraphy-D4pm.ttf);
+}
+
 .modal{
   display: flex;
   position: absolute;
@@ -39,13 +44,29 @@ body{
   margin: 0;
 }
 
-#odinImg{
-  display: flex;
-  flex-shrink: 1;
-  width: 140px;
-  max-width: 80%;
+.overBackground{
   position: absolute;
-  bottom: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.459);
+  max-width: 28vw;
+  bottom: 50px;
+  left: 20px;
+  font-family: Wet, 'Times New Roman';
+  flex:0 1 auto;
+}
+
+.odin-title{
+  font-size: 8em;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+#odinImg{
+  width: 200px;
 }
 
 .infoSide{
@@ -127,6 +148,18 @@ h1{
   margin-left: 24px;
   margin-top: 48px;
   padding: 0;
+}
+
+input:required:invalid{
+  border: 2px solid red;
+}
+
+input:required:valid{
+  border: 2px solid rgb(11, 155, 11);
+}
+
+#user-password:required:invalid, #confirm-password:required:invalid{
+  border: 2px solid red;
 }
 
 a:link{
